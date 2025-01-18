@@ -1,145 +1,133 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    transition: 0.3s ease 0s ;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  transition: 0.3s ease 0s;
 }
 
 .body {
-    height: 100%;
-    width: 100%;
-    background-color: wheat;
-    
+  height: 100%;
+  width: 100%;
+  background-color: wheat;
 }
 
 .container {
-    height: 100%;
-    width: 100%;
-    margin: auto;
+  height: 100%;
+  width: 100%;
+  margin: auto;
 }
-
-
 
 .navbar {
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    padding: 5px;
-    margin-bottom: 80px;
-
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding: 5px;
+  margin-bottom: 80px;
 }
 
-.navbar > a, .links > a{
-    text-decoration: none;
-    border: 2px solid rgb(75, 75, 75);
-    padding: 6px;
-    border-radius: 20px;
-    background-color: rgb(75, 75, 75);
-    color: white;
-   
-
+.navbar > a,
+.links > a {
+  text-decoration: none;
+  border: 2px solid rgb(75, 75, 75);
+  padding: 6px;
+  border-radius: 20px;
+  background-color: rgb(75, 75, 75);
+  color: white;
 }
 
-
-.navbar > a:hover, .navbar >a:focus {
-    background-color: white;
-    color: black;
+.navbar > a:hover,
+.navbar > a:focus {
+  background-color: white;
+  color: black;
 }
 
-.navbar .links a:hover{
-    background-color: white;
-    color: black;
-    
+.navbar .links a:hover,
+.navbar .links a:focus {
+  background-color: white;
+  color: black;
 }
-
 
 /* Styling of the intro section */
 
-.intro{
-    color: rgb(75, 75, 75);
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin: 20px 0px;
+.intro {
+  color: rgb(75, 75, 75);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 20px 0px;
 }
-.intro> img{
-    height: 200px;
-    width: 200px;
-    object-fit: cover;
-    border: 5px solid rgb(75, 75, 75);
-    border-radius: 50%;
-    margin: 20px 0px;
-}
-
-.projects{
-    color: white;
-    background: rgb(75, 75, 75)  ;
-    margin: 100px 0px;
-    padding: 100px 0px;
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-    justify-content: center;
-    align-items: center;
-    border-bottom-right-radius:50px;
-    border-top-left-radius: 50px;
+.intro > img {
+  height: 200px;
+  width: 200px;
+  object-fit: cover;
+  border: 5px solid rgb(75, 75, 75);
+  border-radius: 50%;
+  margin: 20px 0px;
 }
 
-
-.projects>h1{
-    border-bottom: 2px solid white;
+.projects {
+  color: white;
+  background: rgb(75, 75, 75);
+  margin: 100px 0px;
+  padding: 100px 0px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  justify-content: center;
+  align-items: center;
+  border-bottom-right-radius: 50px;
+  border-top-left-radius: 50px;
 }
-.projectsLinks{
-    display: flex;
-    gap: 20px;
+
+.projects > h1 {
+  border-bottom: 2px solid white;
+}
+.projectsLinks {
+  display: flex;
+  gap: 20px;
 }
 
-.projectsLinks>a{
-    text-decoration: none;
-    color: white;
-    font-size: 16px;
-    font-weight: bold;
-    padding: 5px 15px;
-    border: 2px solid white;
-    color: white;
-    border-radius: 25px;
-   
+.projectsLinks > a {
+  text-decoration: none;
+  color: white;
+  font-size: 16px;
+  font-weight: bold;
+  padding: 5px 15px;
+  border: 2px solid white;
+  color: white;
+  border-radius: 25px;
 }
-.projectsLinks>a:hover , .projectsLinks>a:focus{
-    transform: translateY(10px);
-}   
-
+.projectsLinks > a:hover,
+.projectsLinks > a:focus {
+  transform: translateY(10px);
+}
 
 /* Footer section */
-footer{
-   width: 100%;
-   position: fixed;
-   text-align: center;
-   bottom: 0px;
-   right: 0px;
-
+footer {
+  width: 100%;
+  position: fixed;
+  text-align: center;
+  bottom: 0px;
+  right: 0px;
 }
 
-footer>h1{
-    font-weight: 500;
-    font-size: 12px;
-    background-color: rgb(75, 75, 75);
-    color: white;
+footer > h1 {
+  font-weight: 500;
+  font-size: 12px;
+  background-color: rgb(75, 75, 75);
+  color: white;
 }
-
-
 
 /* Responsiveness Added */
 @media only screen and (max-width: 500px) {
-    .container{
-        padding: 20px;
-    }
-    .navbar{
-        flex-direction: column;
-        gap: 20px;
-    }
-    .projectsLinks{
-        flex-direction: column;
-    }
-    
+  .container {
+    padding: 20px;
   }
+  .navbar {
+    flex-direction: column;
+    gap: 20px;
+  }
+  .projectsLinks {
+    flex-direction: column;
+  }
+}
